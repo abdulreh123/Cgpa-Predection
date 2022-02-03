@@ -1,8 +1,8 @@
 
-import numpy as np
-import pandas as pd
-import sklearn
-from sklearn import linear_model
+# import numpy as np
+# import pandas as pd
+# import sklearn
+# from sklearn import linear_model
 import pickle
 import uvicorn
 import json
