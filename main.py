@@ -47,8 +47,9 @@ from fastapi import FastAPI,Query
 # print(custom)
 app = FastAPI()
 origins = [
-    "http://localhost:3000",
-    "localhost:3000"
+     "http://app.neu.edu.tr:7001",
+#    "http://localhost:3000",
+     "app.neu.edu.tr:7001"
 ]
 
 
@@ -112,4 +113,4 @@ async def predict(name):
         return {"result": customs[0]}
 
 if __name__ == '__main__':
-	uvicorn.run(app, host="127.0.0.1", port=7002)
+	uvicorn.run(app, host="app.neu.edu.tr", port=7003)
